@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working On</title></head>
+<style>
+    .waviy {
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-weight: bold;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 200%;
+  font-family:Tahoma;
+  color:#0072dd;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+</style>
+<body>
+    <center>
+    <div class="waviy">
+        <span style="--i:1">N</span>
+        <span style="--i:2">o</span>
+        <span style="--i:3">n</span>
+        <span style="--i:4">e</span>
+       </div>
+    </center>
+</body>
+</html>
